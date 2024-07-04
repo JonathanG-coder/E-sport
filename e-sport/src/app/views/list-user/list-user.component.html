@@ -1,0 +1,25 @@
+<body>
+  <div class="banniere">
+    <img [src]="team?.game?.bannerimg" alt="bannière de {{ team?.team }}" />
+  </div>
+  <div class="logo">
+    <img [src]="team?.logo" alt="Logo de {{ team?.team }}" />
+  </div>
+  <div class="prstjoueur">
+    <h3>Liste des joueurs :</h3>
+  </div>
+  <main class="grid-container">
+    @for (user of team?.players; track $index) {
+    <app-carduser [user]="user" [team]="team"></app-carduser> }
+  </main>
+  <div class="prststaff">
+    <h3>Liste du staff :</h3>
+  </div>
+  <main class="grid-container">
+    @for (user of team?.staff; track $index) {
+    <app-cardstaff [user]="user" [team]="team"></app-cardstaff> }
+  </main>
+  <footer class="footer">
+    <a mat-flat-button href="/teams">Retour</a>
+  </footer>
+</body>

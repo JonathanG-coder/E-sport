@@ -1,0 +1,7 @@
+<div class="grid-container">
+  <ng-container *ngFor="let team of teams; let i = index">
+      <div class="grid-item">
+          <app-cardteam [team]="team" [game]="team.game"></app-cardteam>
+      </div>
+  </ng-container>
+</div>

@@ -1,0 +1,20 @@
+<div class="containerGeneral" [routerLink]="['/teams', team?.id]" role="button">
+  <div class="container1" >
+    <h2>{{ team?.team }}</h2>
+  </div>
+  <div class="container2" >
+    <img [src]="team?.logo" alt="Logo de {{ team?.team }}" />
+  </div>
+  <div class="container3">
+    <p class="infoEquipe">Infos équipe</p>
+    <div class="infoEquipeGeneral">
+      <p>Joueurs: {{ team?.players?.length }} / {{ team?.maxplayers }} max </p>
+      <p>Staffs: {{ team?.staff?.length }}</p>
+    </div>
+  </div>
+  <div class="container4">
+    <p>{{ game?.name }}</p>
+  </div>
+  <div class="container5">
+    <img [src]="game?.img" alt="Image du jeu" /></div>
+</div>

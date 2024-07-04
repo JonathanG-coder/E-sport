@@ -1,0 +1,21 @@
+<section class="grid-container" [routerLink]="['/teams/' + team?.id + '/players/' + user?.id]"
+routerLinkActive="router-link-active" role="button">
+  <div class="card-header">
+    <h2>{{ user?.firstname }} {{ user?.lastname }}</h2>
+  </div>
+  <div class="card-image">
+    @if(user?.photo){
+    <img [src]="user?.photo" alt="Photo du joueur : {{ user?.lastname }}" />
+    } @else {
+    <p>
+      <span><i>Pas de photo pour ce joueur</i></span>
+    </p>
+    }
+  </div>
+  <div class="card-subtitle">
+    <p class="IJ">Infos du joueur :</p>
+    <p>pseudo : {{ user?.nickname }}</p>
+    <p>Role : {{ user?.role }}</p>
+  </div>
+</section>
+

@@ -1,7 +1,7 @@
 # E-sport
 
 Travail réalisé durant ma formation de Concepteur Développeur d'Application 
-Langage utilisé : Angular/Typescript
+Langage utilisé : Typescript/Angular
 
 Sujet : Présentation de plusieurs équipes de e-sports avec leurs joueurs, leurs staffs, et le jeu auquel ils participent.
 
